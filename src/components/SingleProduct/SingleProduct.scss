@@ -1,0 +1,54 @@
+@import "../../css-config/mixins.scss";
+.prod-detail-section{
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    gap: 32px
+}
+.prod-text-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h2{
+        font-size: 35px;
+        line-height: 1.5;
+    }
+    p{
+color: #777;
+    }
+.additional-detail{
+    h5{
+        color: #83b735;
+        font-weight: 700;
+        font-size: 20px;
+    span{
+        color: #000;
+    }
+    }
+
+}
+.quantity-action{
+    .control{
+        border:1px solid #0000001a;
+        padding: 8px;
+        font-size: 16px;
+        font-weight: 600;
+
+    }
+    .quantity{
+        padding: 8px 16px;
+        font-size: 18px;
+        font-weight: 600;
+        background-color:#ededed
+
+
+    }
+.add-to-cart-btn{
+    margin: 0 16px ;
+    background-color:#83b735;
+    color:  #fff;
+    border: none;
+    padding: 12px 16px ;
+}
+}
+}

@@ -1,0 +1,133 @@
+@import "../../css-config/mixins.scss";
+
+
+header {
+    border-bottom: rgba(0, 0, 0, 0.1);
+    padding: 0 1.4rem;
+    z-index: 99;
+    width: 100%;
+
+    @include sm {
+        padding: 0 .25rem;
+    }
+
+    .header-panel {
+        max-width: 1280px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+
+        @include md {
+            padding:  1rem;
+
+        }
+
+        @include sm {
+            max-width: 100%;
+            padding: 1rem .25rem;
+        }
+        .brand-panel{
+            a{
+                font-size: 38px;
+                color: #000;
+                font-weight: 700;
+            }
+        }
+
+        .nav-panel {
+            list-style: none;
+            display: flex;
+            min-width: 420px;
+            align-items: center;
+            justify-content: space-between;
+
+            @include sm {
+                min-width: 1px;
+                display: none;
+            }
+
+            .icon-panel {
+                display: flex;
+                flex: 1;
+                align-items: center;
+                justify-content: flex-end;
+                gap: 1rem;
+
+                .cart-icon {
+                    display: inline-flex;
+                    position: relative;
+
+                    span {
+                        min-width: 20px;
+                        text-align: center;
+                        position: absolute;
+                        border-radius: 50%;
+                        background: red;
+                        color: #fff;
+                        font-size: 10px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        top: -12px;
+                        right: -8px;
+                        height: 20px;
+                        line-height: 1;
+                    }
+                }
+            }
+        }
+
+        .ac-panel {
+            svg {
+                font-size: 1.25rem;
+                margin: 0 .35rem;
+                cursor: pointer;
+            }
+
+
+        }
+
+        .navigation {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            li {
+                cursor: pointer;
+                padding: 0 .5rem;
+                font-size: 14px;
+                font-weight: 600;
+                text-transform: uppercase;
+                list-style: none;
+                color: #333;
+                transition: color 0.35s ease;
+
+            &:hover{
+                    color: #83b735
+            }
+            }
+        }
+
+    }
+
+    &.sticky-header {
+        position: sticky;
+        top: 0;
+        transform: translateY(-74px);
+        animation: header-anim 0.5s ease forwards;
+        background-color: #f5f5f5;
+    }
+}
+
+@keyframes header-anim {
+    0% {
+        transform: translateY(-74px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}

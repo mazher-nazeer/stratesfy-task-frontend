@@ -1,0 +1,15 @@
+.related-products{
+    display: flex;
+    gap: 24px;
+    align-items:center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 200px;
+    position: relative;
+h2{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    font-size: 36px;
+}
+}

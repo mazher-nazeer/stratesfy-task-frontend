@@ -1,0 +1,18 @@
+@import "../../../css-config/mixins.scss";
+
+.card{
+    position: relative;
+    transition: transform 4s;
+    cursor: pointer;
+    h1{
+        position: absolute;
+        left: 8px;
+        top: 15px;
+        font-size: 20px;
+        
+    }
+    &:hover{
+        top: 5px;
+        
+    }
+}

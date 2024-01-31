@@ -1,0 +1,9 @@
+@import "../../../css-config/mixins.scss";
+
+.card-detailed-view {
+    min-width: 400px;
+    padding: 6px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

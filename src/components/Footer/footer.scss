@@ -1,0 +1,21 @@
+@import "../../css-config/mixins.scss";
+
+footer {
+    margin-top: 100px;
+    background-color: #ededed;
+    padding: 16px 24px;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .footer-left {
+            a {
+                font-size: 22px;
+                font-weight: bold;
+                color: #83b735;
+            }
+        }
+    }
+}

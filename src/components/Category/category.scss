@@ -1,0 +1,46 @@
+@import "../../css-config/mixins.scss";
+.category-panel{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // margin: 2.5rem 0;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    // margin: auto;
+    text-align: center;
+    font-family: arial;
+    cursor: pointer;
+img{
+    max-width: 100%;
+}  
+}
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: #333;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    background-color: #efefef;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+  .product-inner-detail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
